@@ -9,13 +9,13 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   color: #ff1c65;
 }
 
 .instruction {
-  font-size: 1rem; /* même taille que le paragraphe du formulaire */
+  font-size: 0.8rem; /* réduit à 0.7rem */
   margin-bottom: 2rem;
 }
 
@@ -27,8 +27,8 @@ h1 {
 }
 
 svg {
-  width: 80px;
-  height: 80px;
+  width: 70px;   /* taille ajustée à 70px */
+  height: 70px;  /* taille ajustée à 70px */
 }
 
 #resultat {
@@ -37,7 +37,7 @@ svg {
 }
 
 #resultat.resultat-success {
-  font-size: 1rem; /* même taille que instruction et paragraphe formulaire */
+  font-size: 0.8rem; /* réduit à 0.7rem */
   color: #1eff6f;
 }
 
@@ -51,8 +51,9 @@ svg {
 }
 
 #formulaire p {
-  font-size: 1rem; /* taille de référence */
+  font-size: 0.7rem; /* réduit à 0.7rem */
   margin-bottom: 10px;
+  color: #ff1c65;
 }
 
 #prenom {
@@ -71,7 +72,4 @@ svg {
 #numero-joueur {
   margin-top: 20px;
   font-size: 28px;
-}
-#formulaire p {
-  color: #ff1c65;
 }
