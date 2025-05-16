@@ -15,7 +15,7 @@ h1 {
 }
 
 .instruction {
-  font-size: 0.8rem; /* réduit à 0.7rem */
+  font-size: 0.7rem;
   margin-bottom: 2rem;
 }
 
@@ -27,8 +27,8 @@ h1 {
 }
 
 svg {
-  width: 70px;   /* taille ajustée à 70px */
-  height: 70px;  /* taille ajustée à 70px */
+  width: 50px;
+  height: 50px;
 }
 
 #resultat {
@@ -37,7 +37,7 @@ svg {
 }
 
 #resultat.resultat-success {
-  font-size: 0.8rem; /* réduit à 0.7rem */
+  font-size: 0.7rem;
   color: #1eff6f;
 }
 
@@ -51,7 +51,7 @@ svg {
 }
 
 #formulaire p {
-  font-size: 0.7rem; /* réduit à 0.7rem */
+  font-size: 0.7rem;
   margin-bottom: 10px;
   color: #ff1c65;
 }
@@ -72,4 +72,37 @@ svg {
 #numero-joueur {
   margin-top: 20px;
   font-size: 28px;
+}
+
+/* Version mobile — réduit tailles pour petits écrans */
+
+@media (max-width: 480px) {
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .instruction, 
+  #resultat.resultat-success, 
+  #formulaire p {
+    font-size: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #numero-joueur {
+    font-size: 18px;
+  }
+
+  #prenom {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+
+  #formulaire button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
 }
