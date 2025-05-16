@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Décryptage de Code — Squid Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>△ ◯ ▭ 312</h1>
+  <p class="instruction">Clique les symboles dans le bon ordre pour découvrir ton sort.</p>
+
+  <div class="buttons">
+    <!-- Triangle -->
+    <button onclick="selectionner('triangle')">
+      <svg viewBox="0 0 100 100">
+        <polygon points="50,15 90,85 10,85" stroke="#ff1c65" stroke-width="8" fill="none" />
+      </svg>
+    </button>
+
+    <!-- Cercle -->
+    <button onclick="selectionner('rond')">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" stroke="#ff1c65" stroke-width="8" fill="none" />
+      </svg>
+    </button>
+
+    <!-- Carré -->
+    <button onclick="selectionner('carre')">
+      <svg viewBox="0 0 100 100">
+        <rect x="15" y="15" width="70" height="70" stroke="#ff1c65" stroke-width="8" fill="none" />
+      </svg>
+    </button>
+  </div>
+
+  <p id="resultat"></p>
+
+  <div id="formulaire" style="display:none; margin-top:20px;">
+    <p>Inscrivez votre prénom pour connaître votre numéro de joueur :</p>
+    <input type="text" id="prenom" placeholder="Ton prénom" />
+    <button onclick="genererNumero()">Valider</button>
+    <p id="numero-joueur" style="margin-top:20px; font-size: 28px;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
