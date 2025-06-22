@@ -38,8 +38,7 @@ function genererNumero() {
   } else if (["lisa", "lisouille"].includes(prenom)) {
     numeroFinal = "067";
   } else if (["manu", "emmanuel"].includes(prenom)) {
-    numeroFinal = Math.floor(Math.random() * (455 - 68 + 1)) + 68;
-    numeroFinal = numeroFinal.toString().padStart(3, '0');
+    numeroFinal = "456";
   } else if (["ana", "nana", "anaelle", "nanouille"].includes(prenom)) {
     affichage.style.color = "red";
     affichage.textContent = "Confidentiel";
